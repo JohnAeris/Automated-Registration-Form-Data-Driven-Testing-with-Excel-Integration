@@ -1,4 +1,5 @@
 DataTest1.xlsx
-HeadlessTesting/
-TestPratice_00/
-ReadDataFromExcel.java
+AutomationPractice/src/HeadlessTesting/
+src/TestPratice_00/
+src/DataDrivenTest/ReadDataFromExcel.java
+.gitignore
