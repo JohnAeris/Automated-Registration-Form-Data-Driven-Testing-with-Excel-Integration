@@ -18,13 +18,15 @@ public class RegistrationTest {
 		System.setProperty("webdriver.edge.driver",
 				"D:\\Programming Tools\\Eclipse IDE\\WebDriver\\Edge\\edgedriver_win64\\msedgedriver.exe"); // Set property for Edge Driver, change the path for your webdriver.exe
 		WebDriver driver = new EdgeDriver();
-
+		
 		FileInputStream file = new FileInputStream("D:\\Projects\\Test Automation\\AutomationPractice\\AutomationPractice\\DataTest2.xlsx"); // Get the excel file
 		XSSFWorkbook workBook = new XSSFWorkbook(file); // Get the workbook 
 		XSSFSheet sheet = workBook.getSheet("Sheet1"); // Get the sheet inside of workbook
 
 		int rowCount = sheet.getLastRowNum(); // 3 Rows
-
+		
+		Thread.sleep(5000);
+		
 		for (int i = 1; i <= rowCount; i++) { // Iterate and get the data for every cell
 			XSSFRow currentRow = sheet.getRow(i); // Iterate the row
 
